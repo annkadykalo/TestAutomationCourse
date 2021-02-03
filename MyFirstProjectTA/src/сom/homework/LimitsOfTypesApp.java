@@ -19,7 +19,5 @@ public class LimitsOfTypesApp {
         System.out.println("long \t\t" + longMin + "\t" + longMax);
         System.out.println("float \t\t" + floatMin + "\t\t" + floatMax);
         System.out.println("double \t\t" + doubleMin + "\t" + doubleMax);
-
-
     }
 }

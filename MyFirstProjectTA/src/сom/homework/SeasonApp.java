@@ -2,21 +2,6 @@ package сom.homework;
 
 import java.util.Scanner;
 
-/*
-Create new class SeasonApp with method main inside then:​
-
-Create String variable currentMonth​
-
-Assign it one value of the 12 months​
-
-Create Enum with four seasons (WINTER, SPRING ...)​
-
-Create Switch which identify which month related to what season (Winter, Spring and so on)​
-
-Print out season in console - use for it System.out.println() ​
-
-* Add reading variable currentMonth in console.
- */
 public class SeasonApp {
     enum Season { WINTER, SPRING, SUMMER, AUTUMN};
 
