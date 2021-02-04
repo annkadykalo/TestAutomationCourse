@@ -1,7 +1,5 @@
 package сom.homework;
 
-
-
 public class Student {
     private String name;
     private double rating;
@@ -30,25 +28,41 @@ public class Student {
     }
 
     public static boolean betterStudent (Student leftStudent, Student rightStudent){
-        if (leftStudent.rating >= rightStudent.rating){
-            return true;
-        }
-        return false;
+        return leftStudent.rating >= rightStudent.rating;
     }
 
     public String toString() {
-        System.out.println("Student name: " + this.name);
-        System.out.println("Student rating: " + this.rating);
-        return null;
+        return new String("Student: " + this.name + "\nRating: " + this.rating);
     }
 
     public void changeRating(double newRating) {
         setRating(newRating);
     }
 
+    public static double getAverage (Student... st){
+        double result = 0;
+        for (Student student : st) {
+            result += student.getRating();
+        }
+        result /= st.length;
+        return result;
+    }
+
     public static void main(String[]args){
-        Student Jack = new Student("Jack", 85);
-        Jack.toString();
+        Student st1 = new Student("Jack", 5);
+        Student st2 = new Student("Mary", 2);
+        Student st3 = new Student("Tom", 3);
+
+        System.out.println(st1.toString());
+        System.out.println(st2.toString());
+        System.out.println(st3.toString());
+
+        System.out.println("Average rating:" + Student.getAverage(st1, st2, st3));
+
+        st1.changeRating(10);
+
+        System.out.println("New average rating:" + Student.getAverage(st1, st2, st3));
+
     }
 
 }
