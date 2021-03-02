@@ -39,11 +39,6 @@ public class Main {
         System.out.println(Power.pow(3, 1));
         System.out.println(Power.pow(3, 0));
 
-
-
-
-
-
     }
 
 }
