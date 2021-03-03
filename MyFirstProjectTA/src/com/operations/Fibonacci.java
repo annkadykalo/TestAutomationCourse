@@ -14,7 +14,7 @@ public class Fibonacci {
             return arr;
 
         for (int i = 2; i < n ; i++){
-            arr[i] = arr[i-1] + arr[i-2]; //this comment is to create a conflict
+            arr[i] = arr[i-1] + arr[i-2]; //I had hard times creating merge conflicts
         }
         return arr;
     }
